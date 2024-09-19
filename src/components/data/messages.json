@@ -1,157 +1,103 @@
-{
-    "conversations": [
-      {
-        "user": "Bonjour",
-        "assistant": "Bonjour ! Comment puis-je vous aider aujourd'hui ?"
-      },
-      {
-        "user": "Quel est le temps aujourd'hui ?",
-        "assistant": "Je ne peux pas vérifier la météo actuellement, mais vous pouvez consulter une application météo."
-      },
-      {
-        "user": "Comment ça va ?",
-        "assistant": "Je vais bien, merci de demander ! Et vous ?"
-      },
-      {
-        "user": "Qu'est-ce que l'intelligence artificielle ?",
-        "assistant": "L'intelligence artificielle est une branche de l'informatique qui vise à créer des systèmes capables de simuler l'intelligence humaine."
-      },
-      {
-        "user": "Quelle heure est-il ?",
-        "assistant": "Je ne peux pas vérifier l'heure en ce moment, mais votre appareil devrait pouvoir vous l'afficher."
-      },
-      {
-        "user": "Raconte-moi une blague.",
-        "assistant": "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau !"
-      },
-      {
-        "user": "Peux-tu m'aider avec mes devoirs ?",
-        "assistant": "Bien sûr ! Quelle est la question ?"
-      },
-      {
-        "user": "Qu'est-ce que Vue.js ?",
-        "assistant": "Vue.js est un framework JavaScript progressif pour construire des interfaces utilisateur."
-      },
-      {
-        "user": "Comment puis-je apprendre le JavaScript ?",
-        "assistant": "Il existe de nombreuses ressources en ligne pour apprendre JavaScript, telles que MDN Web Docs et des plateformes comme freeCodeCamp."
-      },
-      {
-        "user": "Quel est ton langage de programmation préféré ?",
-        "assistant": "Je suis programmé pour fonctionner avec de nombreux langages, donc je n'ai pas de préférence."
-      },
-      {
-        "user": "Qu'est-ce que l'apprentissage automatique ?",
-        "assistant": "L'apprentissage automatique est une sous-branche de l'intelligence artificielle qui permet aux systèmes d'apprendre et de s'améliorer automatiquement à partir de données."
-      },
-      {
-        "user": "Comment faire une pizza maison ?",
-        "assistant": "Pour faire une pizza maison, vous avez besoin de pâte, de sauce tomate, de fromage et de garnitures de votre choix. Étalez la pâte, ajoutez la sauce, le fromage et les garnitures, puis faites cuire au four."
-      },
-      {
-        "user": "Peux-tu me recommander un bon livre ?",
-        "assistant": "Je recommande 'Sapiens: Une brève histoire de l'humanité' de Yuval Noah Harari."
-      },
-      {
-        "user": "Qu'est-ce que le cloud computing ?",
-        "assistant": "Le cloud computing est l'utilisation de serveurs distants sur Internet pour stocker, gérer et traiter des données, plutôt que d'utiliser un serveur local ou un ordinateur personnel."
-      },
-      {
-        "user": "Qu'est-ce que le Big Data ?",
-        "assistant": "Le Big Data fait référence à de grands ensembles de données complexes qui nécessitent des outils d'analyse avancés pour être traités."
-      },
-      {
-        "user": "Qu'est-ce que le framework Angular ?",
-        "assistant": "Angular est un framework web développé par Google pour créer des applications web à page unique."
-      },
-      {
-        "user": "Pourquoi devrais-je apprendre à coder ?",
-        "assistant": "Apprendre à coder peut vous aider à résoudre des problèmes, à améliorer vos compétences logiques et à ouvrir des opportunités professionnelles dans de nombreux domaines."
-      },
-      {
-        "user": "Qu'est-ce qu'un algorithme ?",
-        "assistant": "Un algorithme est une série d'instructions définies pour accomplir une tâche spécifique."
-      },
-      {
-        "user": "Comment puis-je améliorer mes compétences en programmation ?",
-        "assistant": "Pratiquez régulièrement, travaillez sur des projets réels et lisez des livres ou des articles sur les meilleures pratiques de programmation."
-      },
-      {
-        "user": "Qu'est-ce que le responsive design ?",
-        "assistant": "Le responsive design est une approche de conception web qui permet à un site de s'adapter à différents types d'écrans et d'appareils."
-      },
-      {
-        "user": "Qu'est-ce que Git ?",
-        "assistant": "Git est un système de contrôle de version décentralisé utilisé pour suivre les modifications apportées aux fichiers dans un projet."
-      },
-      {
-        "user": "Peux-tu m'expliquer ce qu'est Docker ?",
-        "assistant": "Docker est une plateforme qui permet de créer, déployer et gérer des conteneurs pour exécuter des applications de manière isolée."
-      },
-      {
-        "user": "Quelle est la différence entre HTTP et HTTPS ?",
-        "assistant": "HTTPS est la version sécurisée de HTTP. Il utilise le cryptage SSL/TLS pour sécuriser les communications entre le client et le serveur."
-      },
-      {
-        "user": "Qu'est-ce qu'une API ?",
-        "assistant": "Une API (Application Programming Interface) est un ensemble de définitions et de protocoles qui permettent à un logiciel de communiquer avec un autre."
-      },
-      {
-        "user": "Comment fonctionne l'authentification par JWT ?",
-        "assistant": "JWT (JSON Web Token) est un standard pour créer des jetons d'accès. Lorsqu'un utilisateur se connecte, un jeton est créé et envoyé au client pour prouver son identité."
-      },
-      {
-        "user": "Peux-tu m'aider avec les promesses en JavaScript ?",
-        "assistant": "Une promesse en JavaScript est un objet qui représente la réussite ou l'échec éventuel d'une opération asynchrone. Elle peut être résolue ou rejetée."
-      },
-      {
-        "user": "Qu'est-ce que l'Open Source ?",
-        "assistant": "Le logiciel open source est un logiciel dont le code source est accessible au public et peut être modifié ou redistribué par n'importe qui."
-      },
-      {
-        "user": "Qu'est-ce que le SEO ?",
-        "assistant": "Le SEO (Search Engine Optimization) est l'ensemble des techniques utilisées pour améliorer la visibilité d'un site web sur les moteurs de recherche."
-      },
-      {
-        "user": "Qu'est-ce que Kubernetes ?",
-        "assistant": "Kubernetes est une plateforme open source pour l'automatisation du déploiement, de la gestion et de la mise à l'échelle des conteneurs."
-      },
-      {
-        "user": "Comment puis-je apprendre à concevoir des interfaces utilisateur ?",
-        "assistant": "Vous pouvez commencer par étudier les principes de design, utiliser des outils comme Figma ou Sketch, et vous inspirer des bonnes pratiques en matière d'UX/UI."
-      },
-      {
-        "user": "Qu'est-ce que le Machine Learning ?",
-        "assistant": "Le Machine Learning est un type d'intelligence artificielle qui permet aux ordinateurs d'apprendre à partir de données sans être explicitement programmés."
-      },
-      {
-        "user": "Comment puis-je améliorer la performance de mon site web ?",
-        "assistant": "Vous pouvez améliorer la performance de votre site web en optimisant les images, en réduisant le nombre de requêtes HTTP, et en utilisant un CDN."
-      },
-      {
-        "user": "Qu'est-ce que JSON ?",
-        "assistant": "JSON (JavaScript Object Notation) est un format léger d'échange de données facile à lire et à écrire pour les humains et les machines."
-      },
-      {
-        "user": "Qu'est-ce que le design pattern MVC ?",
-        "assistant": "Le modèle MVC (Model-View-Controller) est un modèle architectural qui sépare une application en trois composants : modèle, vue et contrôleur."
-      },
-      {
-        "user": "Comment puis-je sécuriser une API REST ?",
-        "assistant": "Vous pouvez sécuriser une API REST avec des méthodes comme l'authentification via JWT, l'utilisation de HTTPS, et la validation des entrées."
-      },
-      {
-        "user": "Qu'est-ce que TypeScript ?",
-        "assistant": "TypeScript est une surcouche de JavaScript qui ajoute des types statiques. Il permet de détecter les erreurs plus tôt lors du développement."
-      },
-      {
-        "user": "Quelle est la différence entre SQL et NoSQL ?",
-        "assistant": "SQL utilise des bases de données relationnelles structurées, tandis que NoSQL est conçu pour des bases de données non relationnelles, plus flexibles pour des données non structurées."
-      },
-      {
-        "user": "Qu'est-ce que le front-end et le back-end ?",
-        "assistant": "Le front-end fait référence à la partie visible d'une application (interface utilisateur), tandis que le back-end concerne le côté serveur (bases de données, API)."
-      }
+[
+  {
+    "bot": [
+      ["Bonjour ! Comment puis-je vous aider aujourd'hui ?"]
+    ],
+    "utilisateur": [
+      ["Bonjour, j'avais quelques questions sur Vue.js, j'aimerais comprendre comment gérer les événements dans Vue."]
+      
+    ]
+  },
+  {
+    "bot": [
+      ["Bien sûr ! Vous pouvez utiliser la directive `v-on` ou la notation abrégée `@` pour gérer les événements."],
+      ["Par exemple, `@click=\"handleClick\"` vous permet d'attacher une fonction à un événement de clic."]
+    ],
+    "utilisateur": [
+      ["D'accord, mais est-ce que cela fonctionne aussi avec les événements personnalisés ?"],
+      ["Et comment je fais si je veux transmettre des données à travers ces événements ?"]
+    ]
+  },
+  {
+    "bot": [
+      ["Oui, les événements personnalisés sont pris en charge ! Vous pouvez les émettre avec `$emit` dans un composant enfant."],
+      ["Pour passer des données, il suffit de les inclure comme second paramètre de `$emit`. Exemple : `this.$emit('customEvent', data)`."]
+    ],
+    "utilisateur": [
+      ["Merci ! Ça devient plus clair. J'avais aussi une question sur la réactivité dans Vue."],
+      ["Comment Vue sait-il que les données ont changé ?"],
+      ["Est-ce basé sur l'observation des variables ?"]
+    ]
+  },
+  {
+    "bot": [
+      ["Exactement, Vue utilise un système de réactivité qui repose sur des getters et setters."],
+      ["Lorsqu'une donnée change, Vue détecte ce changement et met à jour automatiquement la vue associée."],
+      ["Cela permet de garder l'interface synchronisée avec l'état de l'application sans écrire beaucoup de code supplémentaire."]
+    ],
+    "utilisateur": [
+      ["Génial, je commence à comprendre !"],
+      ["J'avais aussi une question sur l'utilisation de `v-model`."]
+    ]
+  },
+  {
+    "bot": [
+      ["Le `v-model` est principalement utilisé pour les formulaires, mais il peut aussi être utilisé avec des composants personnalisés. Vous pouvez créer vos propres composants avec des modèles bidirectionnels en utilisant `v-model`."]
+      
+    ],
+    "utilisateur": [
+      ["Ça m'aide énormément dans mon apprentissage de Vue.js."],
+      ["Je vais essayer d'implémenter tout ça dans mon projet."]
+    ]
+  },
+  {
+    "bot": [
+      ["Je suis ravi que cela vous soit utile !"],
+      ["N'oubliez pas que la pratique régulière est la clé pour bien maîtriser Vue.js."]
+    ],
+    "utilisateur": [
+      ["Que recommanderiez-vous pour structurer un projet Vue.js ?"],
+      ["Devrais-je utiliser Vuex pour la gestion d'état ou Pinia est-il mieux ?"]
+    ]
+  },
+  {
+    "bot": [
+      ["Bonne question !"],
+      ["Pinia est le successeur moderne de Vuex et est plus simple à utiliser tout en étant plus performant."],
+      ["Si vous commencez un nouveau projet, je vous recommande d'utiliser Pinia, mais si vous travaillez déjà avec Vuex, il n'est pas nécessaire de tout migrer."]
+    ],
+    "utilisateur": [
+      ["D'accord, je vais essayer Pinia alors."],
+      ["Merci encore pour tout ! À bientôt !"],
+      ["Votre aide a été précieuse aujourd'hui."]
+    ]
+  },
+  {
+    "bot": [
+      ["Ce fut un plaisir de vous aider !"],
+      ["Bonne chance avec votre projet Vue.js, et n'hésitez pas à revenir si vous avez d'autres questions."]
+    ],
+    "utilisateur": [
+      ["Merci!"]
+    ]
+  },
+  {
+    "bot": [
+      ["Avez-vous besoin d'assistance pour la configuration ?"],
+      ["Nous avons des guides détaillés pour cela."]
+    ],
+    "utilisateur": [
+      ["Oui, je vais avoir besoin d'aide pour la configuration."],
+      ["Je vais jeter un œil à la communauté aussi."]
+    ]
+  },
+  {
+    "bot": [
+      ["Si vous avez des retours à nous faire, n'hésitez pas !"],
+      ["Nous aimons toujours entendre ce que nos utilisateurs pensent."]
+    ],
+    "utilisateur": [
+      ["D'accord, je vous ferai savoir si j'ai des commentaires."]
     ]
   }
-  
+]

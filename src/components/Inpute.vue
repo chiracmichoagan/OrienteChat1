@@ -3,6 +3,7 @@
       <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="Écrivez un message..." />
       <button @click="sendMessage">Envoyer</button>
     </div>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, sint voluptatem! Cupiditate ea iure necessitatibus fugiat aperiam sed illum veniam harum sint culpa, praesentium molestiae, totam dolorem sit enim quos.
   </template>
   
   <script setup>

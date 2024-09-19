@@ -1,55 +1,30 @@
 <template>
-    <div class="chat-container">
-      <div class="messages">
-        <Message
-          v-for="msg in messages"
-          :key="msg.id"
-          :message="msg"
-        />
+  <div class="chat-container">
+    <div class="messages">
+      <!-- Iteration over conversations -->
+      <div v-for="(conversation, index) in conversations" :key="index" class="conversation">
+        <!-- Affichage des messages du bot -->
+        <div v-for="(message, msgIndex) in conversation.bot" :key="'bot-' + msgIndex" class="message bot">
+          <p v-for="(line, lineIndex) in message" :key="'line-' + lineIndex">{{ line }}</p>
+        </div>
+        <!-- Affichage des messages de l'utilisateur -->
+        <div v-for="(message, msgIndex) in conversation.utilisateur" :key="'user-' + msgIndex" class="message utilisateur">
+          <p v-for="(line, lineIndex) in message" :key="'line-' + lineIndex">{{ line }}</p>
+        </div>
       </div>
-      <Input @sendMessage="addMessage" />
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue';
-  import Message from './Message.vue';
-  import Input from './Inpute.vue';
-  import messagesData from './data/messages.json';
+  </div>
+</template>
 
-  
-const messages = ref([]); // Commence avec une liste de messages vide
+<script setup>
+import { ref } from 'vue';
+import conversationsData from './data/messages.json'; // Assure-toi que le chemin est correct
 
-function addMessage(text) {
-  const newMessage = {
-    id: messages.value.length + 1,
-    text,
-    sender: 'user',
-  };
-  messages.value.push(newMessage);
-  generateAssistantResponse(text);
-}
+// Chargement des conversations du fichier JSON
+const conversations = ref(conversationsData);
+</script>
 
-function generateAssistantResponse(userMessageText) {
-  // Trouver la réponse appropriée dans le fichier JSON
-  const foundConversation = messagesData.conversations.find(conv => conv.user.toLowerCase() === userMessageText.toLowerCase());
-
-  const assistantResponse = foundConversation
-    ? foundConversation.assistant // Si une correspondance est trouvée
-    : "Désolé, je ne comprends pas cette question."; // Réponse par défaut si aucune correspondance
-
-  setTimeout(() => {
-    const assistantMessage = {
-      id: messages.value.length + 1,
-      text: assistantResponse,
-      sender: 'assistant',
-    };
-    messages.value.push(assistantMessage);
-  }, 1000);
-}
-  </script>
-  
-  <style scoped>
+<style scoped>
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -65,22 +40,26 @@ function generateAssistantResponse(userMessageText) {
   flex-direction: column;
 }
 
-input {
-  width: 100%;
+.conversation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .message {
   display: flex;
-  justify-content: flex-start; /* Par défaut, aligne les messages à gauche */
   margin-bottom: 10px;
 }
 
-.message.user {
+.message.bot {
   justify-content: flex-start;
 }
 
-.message.assistant {
+.message.utilisateur {
   justify-content: flex-end;
 }
-  </style>
-  
+
+.message p {
+  margin: 0;
+}
+</style>
